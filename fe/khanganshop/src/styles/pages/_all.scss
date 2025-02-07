@@ -1,0 +1,89 @@
+@use "sass:map";
+@import"theme";
+@import"responsive";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html,
+body{
+    margin: 0px;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px; 
+    width: 100%;
+    //background: map-get($map: $theme-colors, $key: "main");
+    margin:auto
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+
+}
+@include Responsive($DESKTOP){
+    .col-xl-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+        
+    }
+    .col-xl-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-xl-9{
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-xl-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@include Responsive($MEDIUM_DEVICE){
+    .col-lg-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-lg-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@include Responsive($TABLET_DEVICE){
+    .col-md-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@include Responsive($WIDE_MOBILE){
+    .col-sm-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-sm-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@include Responsive($SMALL_DEVICE){
+    .col-xs-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,121 @@
+@use "sass:map";
+@import "../../../../styles/pages/theme";
+.footer{
+    background: #F3F6FA;
+    padding-top: 70px;
+    padding-bottom: 0;
+    
+    .footer_about{
+        margin-top: -30px;
+        margin-bottom: 30px;
+        .footer_about_logo{
+            margin-bottom: 15px;
+            display: inline-block;
+            img{
+                padding: 10px 0;
+                width: 120px;
+                height: auto;
+            }
+        }
+    }
+    .footer_about ul li{
+        font-size: 14px;
+        color:map.get($map: $theme-colors, $key: "bold-text");
+        list-style: none;
+        line-height: 25px;
+    }
+     .footer_widget{
+         margin-bottom: 30px;
+        overflow: hidden;
+     
+        h6{
+            color: map.get($map: $theme-colors, $key: "main");
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 700;   
+            }
+        
+        ul{
+             float: left;
+            width: 50%;
+            
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color:map.get($map: $theme-colors, $key: "main");
+                    font-size: 14px;
+                    line-height: 32px;
+
+                }    
+            }
+
+        }
+        p{
+            font-size: 14px;
+            color:map.get($map: $theme-colors, $key: "normal-text");
+            margin-bottom: 30px;
+
+        }
+        .submit-container{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            input{
+                width: 100%;
+                font-size: 16px;
+                padding-left: 20px;
+                color: map.get($map: $theme-colors, $key: "normal-text");
+                height: 46px;
+                border: 1px solid #ededed;
+                ::placeholder{
+                    color: map.get($map: $theme-colors, $key: "normal-text");
+                }
+            }
+            button{
+                cursor: pointer;
+                height: 46px;
+                font-size: 14px;
+                font-weight: 800;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 16px 30px 17px;
+                color: #ffff;
+                border: none;
+                min-width: max-content;
+                background : map.get($map: $theme-colors, $key: "main");
+                &:hover{
+                    color:rgb(177, 205, 50);
+                }
+            }
+        }
+    }
+.footer_widget_social{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    div{
+        margin-right: 10px;
+        
+        svg{
+            font-size: 20px;
+            padding:10px;
+            color:#404040;
+            border:1px solid #ededed;
+            border-radius: 50%;
+            transition: all 0.3s;
+            background: #ffff ;
+            cursor: pointer;
+        }
+        &:hover svg{
+            background: map.get($map: $theme-colors, $key: "main");
+            color: #ffff;
+            border-color: #ffff ;
+            
+        } 
+        
+    }
+    
+}
+
+}
