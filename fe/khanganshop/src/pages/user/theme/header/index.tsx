@@ -112,7 +112,7 @@ function Header() {
                 />
                 <div className="text-container">
                   <h1>KHANG AN TAPE</h1>
-                  <h2>"Dán Dính Hoàn Hảo</h2>
+                  <h2>"Dán Dính Hoàn Hảo"</h2>
                 </div>
               </Link>
             </div>
