@@ -1,9 +1,9 @@
 import {memo} from 'react'
 function Profile() {
     return <>
-    <div className='container bg-red-600'>
-    <h1>Profilepage</h1>
-    </div>
+    <div  className='p-6'>
+    <h1>Profile Page</h1>
+</div>
         
         
         </>;
