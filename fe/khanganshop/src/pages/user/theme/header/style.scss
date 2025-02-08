@@ -1,268 +1,268 @@
-@use "sass:map";
-@import "../../../../styles/pages/theme";
+// @use "sass:map";
+// @import "../../../../styles/pages/theme";
 
-//----------------------------START HEADER------------------------------------------
-//
-.header_top{
-    background: #f5f5f5 ;
+// //----------------------------START HEADER------------------------------------------
+// //
+// .header_top{
+//     background: #f5f5f5 ;
     
-}
+// }
 
-.header-top-left{
-    ul{
-    display: flex;
-    justify-self: start;
-    align-items: center;
-    list-style: none;
-    column-gap: 10px;
-    padding: 8px 0 8px;
+// .header-top-left{
+//     ul{
+//     display: flex;
+//     justify-self: start;
+//     align-items: center;
+//     list-style: none;
+//     column-gap: 10px;
+//     padding: 8px 0 8px;
 
-    li{
-        font-size: 12px;
-        color: map.get($map: $theme-colors , $key: "normal-text");
-        display: flex;
-        align-items: center;
-    }
+//     li{
+//         font-size: 12px;
+//         color: map.get($map: $theme-colors , $key: "normal-text");
+//         display: flex;
+//         align-items: center;
+//     }
 
-    li:first-child{
-        position: relative;
-        &:after{
-            position: absolute;
-            right: -7px;
-            top: -1px;
-            height: 20px;
-            width: 1px;
-            background: black;
-            opacity: 0.1;
-            content:"";
-        }
-    }
-    }
+//     li:first-child{
+//         position: relative;
+//         &:after{
+//             position: absolute;
+//             right: -7px;
+//             top: -1px;
+//             height: 20px;
+//             width: 1px;
+//             background: black;
+//             opacity: 0.1;
+//             content:"";
+//         }
+//     }
+//     }
     
-}
+// }
 
-.header-top-right{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 8px 0 8px;
-    ul{
-        display: flex;
-        align-items: center;
-        column-gap: 10px;
-        list-style: none;
+// .header-top-right{
+//     display: flex;
+//     justify-content: end;
+//     align-items: center;
+//     padding: 8px 0 8px;
+//     ul{
+//         display: flex;
+//         align-items: center;
+//         column-gap: 10px;
+//         list-style: none;
         
-        a{
-            font-size: 50px;
-            display: inline-block;
-            color: map.get($map: $theme-colors , $key: "normal-text");
-            text-decoration: none;
-        }
+//         a{
+//             font-size: 50px;
+//             display: inline-block;
+//             color: map.get($map: $theme-colors , $key: "normal-text");
+//             text-decoration: none;
+//         }
 
-        .zalo{
-            font-size: 17px;
-        }
-        .ins{
-            font-size: 16px;
-        }
-        .fb{
-            font-size: 16px;
-        }
-        .last-child{
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-            span{
-                font-size: 14px;
-                position: relative;
-                top:1px;
-                right: -1px;
-            }
-        }
+//         .zalo{
+//             font-size: 17px;
+//         }
+//         .ins{
+//             font-size: 16px;
+//         }
+//         .fb{
+//             font-size: 16px;
+//         }
+//         .last-child{
+//             cursor: pointer;
+//             display: flex;
+//             align-items: center;
+//             font-size: 16px;
+//             span{
+//                 font-size: 14px;
+//                 position: relative;
+//                 top:1px;
+//                 right: -1px;
+//             }
+//         }
         
         
-    }
-}
-.header_logo{
-    a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    img{
-        padding: 10px 0;
-        width: 80px;
-        height: auto;
-    }
-    .text-container{
-        display:flex;
-        flex-direction: column;
-        h1{
-            font-size: 18px;
-            font-weight: 500;
-            color: map.get($map: $theme-colors, $key: "normal-text");
+//     }
+// }
+// .header_logo{
+//     a{
+//     display: flex;
+//     align-items: center;
+//     text-decoration: none;
+//     img{
+//         padding: 10px 0;
+//         width: 80px;
+//         height: auto;
+//     }
+//     .text-container{
+//         display:flex;
+//         flex-direction: column;
+//         h1{
+//             font-size: 18px;
+//             font-weight: 500;
+//             color: map.get($map: $theme-colors, $key: "normal-text");
 
-        }
-        h2{
-            font-size: 14px;
-            color: #034400;
-        }
-    }
-}
-}
+//         }
+//         h2{
+//             font-size: 14px;
+//             color: #034400;
+//         }
+//     }
+// }
+// }
 
 
-.header_menu {
-    padding: 24px 0;
+// .header_menu {
+//     padding: 24px 0;
     
-    ul {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        .active{
-           a{
-            color: map.get($map: $theme-colors, $key: "main");
-           } 
-        }
-        li {
-            position: relative;
+//     ul {
+//         display: flex;
+//         justify-content: space-between;
+//         list-style: none;
+//         .active{
+//            a{
+//             color: map.get($map: $theme-colors, $key: "main");
+//            } 
+//         }
+//         li {
+//             position: relative;
 
-            a {
-                text-decoration: none;
-                font-size: 16px;
-                color: map.get($map: $theme-colors, $key: "bold-text");
-                text-transform: uppercase;
-                font-weight: bold;
-                letter-spacing: 2px;
-                transition: all 0.5s;
-                padding: 5px 0;
-                display: block;
-            }
+//             a {
+//                 text-decoration: none;
+//                 font-size: 16px;
+//                 color: map.get($map: $theme-colors, $key: "bold-text");
+//                 text-transform: uppercase;
+//                 font-weight: bold;
+//                 letter-spacing: 2px;
+//                 transition: all 0.5s;
+//                 padding: 5px 0;
+//                 display: block;
+//             }
 
-            > a:before {
-                    content: '';
-                    width: 0px;
-                    height: 5px;
-                    background: map.get($map: $theme-colors, $key: "main");
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    transition: .5s;
-            }
+//             > a:before {
+//                     content: '';
+//                     width: 0px;
+//                     height: 5px;
+//                     background: map.get($map: $theme-colors, $key: "main");
+//                     position: absolute;
+//                     top: 100%;
+//                     left: 0;
+//                     transition: .5s;
+//             }
             
 
-            &:hover > a{
-                color: map.get($map: $theme-colors, $key: "main");
+//             &:hover > a{
+//                 color: map.get($map: $theme-colors, $key: "main");
 
-            }
-            &:hover > a:before {
-                width: 50%;
-                transform: translateX(100%);
-            }
+//             }
+//             &:hover > a:before {
+//                 width: 50%;
+//                 transform: translateX(100%);
+//             }
 
-            &:hover .header_menu_dropdown {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-    }
+//             &:hover .header_menu_dropdown {
+//                 opacity: 1;
+//                 visibility: visible;
+//             }
+//         }
+//     }
   
-.header_menu_dropdown{
-        background: #F3F6FA;     
-        position: absolute;
-        width: 160px;
-        top:36px;
-        left:-32px;
-        z-index: 9;
-        padding: 5px 0;
-        transition: all 0.5s;
-        opacity: 0;
-        visibility: hidden;
-        display: block;
+// .header_menu_dropdown{
+//         background: #F3F6FA;     
+//         position: absolute;
+//         width: 160px;
+//         top:36px;
+//         left:-32px;
+//         z-index: 9;
+//         padding: 5px 0;
+//         transition: all 0.5s;
+//         opacity: 0;
+//         visibility: hidden;
+//         display: block;
 
-        a:before {
-            content: none !important; 
-        }
+//         a:before {
+//             content: none !important; 
+//         }
         
-        li{
-            a{
-                text-transform: uppercase;
-                color: map.get($map: $theme-colors, $key: "normal-text");
-                font-weight: 400;
-                font-size: 13px;
-                padding: 5px 0px 5px 15px;
+//         li{
+//             a{
+//                 text-transform: uppercase;
+//                 color: map.get($map: $theme-colors, $key: "normal-text");
+//                 font-weight: 400;
+//                 font-size: 13px;
+//                 padding: 5px 0px 5px 15px;
 
-            }
+//             }
             
-            &:hover > a{
-                color:rgb(177, 205, 50)         
-                 }
-        }
-    }
-}   
+//             &:hover > a{
+//                 color:rgb(177, 205, 50)         
+//                  }
+//         }
+//     }
+// }   
 
-.header_find_and_cart{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 24px 0;
+// .header_find_and_cart{
+//     display: flex;
+//     justify-content: center;
+//     align-content: center;
+//     padding: 24px 0;
 
-    .header_find{
-        ul{
-            display: flex;
-            margin-right: 10px;
-            &:hover svg{
-                color: map.get($map: $theme-colors , $key: "main");
+//     .header_find{
+//         ul{
+//             display: flex;
+//             margin-right: 10px;
+//             &:hover svg{
+//                 color: map.get($map: $theme-colors , $key: "main");
 
-            }
-            li{
-                margin-left: 20px;
-                position: relative;
-                list-style: none;
-            }
-            svg{
-                font-size: 25px;
-                color: map.get($map: $theme-colors , $key: "normal-text");
-            }
-        }
-    }
-    .header_cart{
+//             }
+//             li{
+//                 margin-left: 20px;
+//                 position: relative;
+//                 list-style: none;
+//             }
+//             svg{
+//                 font-size: 25px;
+//                 color: map.get($map: $theme-colors , $key: "normal-text");
+//             }
+//         }
+//     }
+//     .header_cart{
         
-        ul{
-            display: flex;
-            margin-right: 25px;
-            &:hover svg{
-                color: map.get($map: $theme-colors , $key: "main");
+//         ul{
+//             display: flex;
+//             margin-right: 25px;
+//             &:hover svg{
+//                 color: map.get($map: $theme-colors , $key: "main");
 
-            }
-            li{
-                margin-left: 20px;
-                position: relative;
-                list-style: none;
-            }
-            svg{
-                font-size: 25px;
-                color: map.get($map: $theme-colors , $key: "normal-text");
-            }
-            span{
-                color: #f5f5f5;
-                background: map.get($map: $theme-colors , $key: "main");
-                position: absolute;
-                height: 20px;
-                width: 20px;
-                border-radius: 50%;
-                display: inline-block;
-                text-align: center;
-                line-height: 20px;
-                font-size: 13px;
-                font-weight: 50;
-                left: 20px;
-                top:-2px;
-            }
-        }
-    }
-}
+//             }
+//             li{
+//                 margin-left: 20px;
+//                 position: relative;
+//                 list-style: none;
+//             }
+//             svg{
+//                 font-size: 25px;
+//                 color: map.get($map: $theme-colors , $key: "normal-text");
+//             }
+//             span{
+//                 color: #f5f5f5;
+//                 background: map.get($map: $theme-colors , $key: "main");
+//                 position: absolute;
+//                 height: 20px;
+//                 width: 20px;
+//                 border-radius: 50%;
+//                 display: inline-block;
+//                 text-align: center;
+//                 line-height: 20px;
+//                 font-size: 13px;
+//                 font-weight: 50;
+//                 left: 20px;
+//                 top:-2px;
+//             }
+//         }
+//     }
+// }
 
-//
-//----------------------------END HEADER------------------------------------------
-//
+// //
+// //----------------------------END HEADER------------------------------------------
+// //
